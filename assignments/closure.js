@@ -1,6 +1,23 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+//Closure comes with nested functions.
+
+function fiction () {
+  console.log("The Bird's Nest");
+
+  function chapOne () {
+    var mainChar = "Lam";
+    console.log(mainChar);
+
+      function chapFive () {
+        var suppChar = "Dinh";
+        console.log(`${mainChar} and ${suppChar} are cousins.`);
+        debugger;
+      }
+
+    }
+}
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
