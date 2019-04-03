@@ -3,21 +3,28 @@
 
 //Closure comes with nested functions.
 
-function fiction () {
-  console.log("The Bird's Nest");
+function aMain(){
+  const book = "The Bird's Nest";
+  console.log('This is a book');
 
-  function chapOne () {
-    var mainChar = "Lam";
-    console.log(mainChar);
+  aMain();
 
-      function chapFive () {
-        var suppChar = "Dinh";
-        console.log(`${mainChar} and ${suppChar} are cousins.`);
-        debugger;
-      }
+  function bMain(){
+    const mainChar = 'Lam';
+    console.log(`In ${book}, ${mainChar} is one of the main cast!`);
+
+    bMain();
+
+    function cMain() {
+      const suppChar = 'Dinh';
+      console.log(`${mainChar} and ${suppChar} are cousins.`);
+
+      cMain();
 
     }
+  }
 }
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
